@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="page-background">
+    <div class="container page">
+        <div class="col-md-2 page-index">
+            <div class="list-group">
+              <a class="list-group-item" href="#License">License</a>
+              <a class="list-group-item" href="#Repository">Repository</a>
+              <a class="list-group-item" href="#Releases">Releases</a>
+            </div>
+        </div>
+
+        <div class="col-md-10 page-content">
+            <h1 class="page-title">Download</h1>
+
+            <h2 id="License">License</h2>
+            <p>
+                The PHPCR Browser is available under the MIT License (see below), courtesy of <a href="http://marmelab.com">marmelab</a>
+            </p>
+
+            {% capture license %}{% include download_license.md %}{% endcapture %}
+            {{ license | markdownify }}
+
+            <h2 id="Repository">Repository</h2>
+
+            {% capture repository %}{% include download_repository.md %}{% endcapture %}
+            {{ repository | markdownify }}
+
+            <h2 id="Releases">Releases</h2>
+
+            {% capture releases %}{% include download_releases.md %}{% endcapture %}
+            {{ releases | markdownify }}
+        </div>
+    </div>
+</div>

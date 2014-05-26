@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="page-background">
+    <div class="container page">
+        <div class="col-md-2 page-index">
+            <div class="list-group">
+              <a class="list-group-item" href="#Installation">Installation</a>
+              <a class="list-group-item" href="#Configuration">Configuration</a>
+              <a class="list-group-item" href="#Usage">Usage</a>
+              <a class="list-group-item" href="#Sass">Sass</a>
+              <a class="list-group-item" href="#Tests">Tests</a>
+            </div>
+        </div>
+        <div class="col-md-10 page-content">
+            <h1 class="page-title">Documentation</h1>
+
+            <h2 id="Installation">Installation</h2>
+            {% capture installation %}{% include docs_installation.md %}{% endcapture %}
+            {{ installation | markdownify }}
+
+            <h2 id="Configuration">Configuration</h2>
+            {% capture configuration %}{% include docs_configuration.md %}{% endcapture %}
+            {{ configuration | markdownify }}
+
+            <h2 id="Usage">Usage</h2>
+            {% capture usage %}{% include docs_usage.md %}{% endcapture %}
+            {{ usage | markdownify }}
+
+            <h2 id="Sass">Sass</h2>
+            {% capture sass %}{% include docs_sass.md %}{% endcapture %}
+            {{ sass | markdownify }}
+
+            <h2 id="Tests">Tests</h2>
+            {% capture tests %}{% include docs_tests.md %}{% endcapture %}
+            {{ tests | markdownify }}
+        </div>
+    </div>
+</div>

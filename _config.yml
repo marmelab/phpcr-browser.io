@@ -1,0 +1,7 @@
+name: phpcr-browser
+markdown: redcarpet
+pygments: 'pygments'
+exclude: [sass, config.rb, .sass-cache, bower.json, Makefile]
+
+aws:
+    url: http://54.76.8.138/

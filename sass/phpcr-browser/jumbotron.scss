@@ -1,0 +1,27 @@
+@import 'bootstrap/mixins';
+
+.jumbotron {
+    &.jumbotron-primary {
+        background-color: $jumbotron-primary-bg;
+        color: $jumbotron-primary-color;
+        padding-top: $jumbotron-primary-padding;
+        padding-bottom: $jumbotron-primary-padding;
+        margin-bottom: 0;
+        cursor: default;
+        @include user-select(none);
+
+        p {
+            a {
+                color: $jumbotron-primary-color;
+            }
+
+            &.buttons {
+                margin-top: 30px;
+            }
+        }
+
+        .btn-lg.btn-default {
+            color: #000;
+        }
+    }
+}

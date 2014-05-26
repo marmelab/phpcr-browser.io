@@ -1,0 +1,40 @@
+@import 'bootstrap/variables';
+
+$body-bg: #eee;
+
+$icon-font-path: '/assets/bower_components/bootstrap/dist/fonts/';
+
+$brand-primary: lighten(#dd4814, 20%);
+
+$font-family-base: 'Raleway', 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$navbar-default-bg: #dd4814;
+$navbar-default-link-color: #ffffff;
+$navbar-default-link-hover-bg: darken($navbar-default-bg, 5%);
+$navbar-default-link-hover-color: #ffffff;
+$navbar-default-link-active-color: #ffffff;
+$navbar-default-border: $navbar-default-bg;
+
+$navbar-default-brand-color:               $navbar-default-link-color;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%);
+$navbar-default-brand-hover-bg:            transparent;
+
+
+$jumbotron-primary-bg: $navbar-default-bg;
+$jumbotron-primary-color: #fff;
+$jumbotron-primary-padding: 90px;
+
+$jumbotron-padding:              30px;
+$jumbotron-color:                inherit;
+$jumbotron-bg:                   #fefefe;
+$jumbotron-heading-color:        inherit;
+$jumbotron-font-size:            ceil($font-size-base * 1.5);
+
+$footer-height: 100px;
+$footer-bg: #eee;
+$footer-color: #000;
+$footer-padding: 20px;
+
+$home-main-topics-padding: 50px;
+
+$page-title-bg: $navbar-default-bg;

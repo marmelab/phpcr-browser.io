@@ -1,0 +1,19 @@
+@import 'variables';
+
+.container.main-topics {
+    padding-top: $home-main-topics-padding;
+    padding-bottom: $home-main-topics-padding * 2;
+}
+
+.white-container {
+    background-color: #fff;
+}
+
+.or {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+iframe.github-margin {
+    margin-left: -30px;
+}

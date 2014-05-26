@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/assets/css/screen.css">
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">phpcr-browser</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="/download.html">Download</a>
+              </li>
+              <li>
+                <a href="#demoModal" data-toggle="modal" data-target="#demoModal">Try it online</a>
+              </li>
+              <li>
+                <a href="/documentation.html">Documentation</a>
+              </li>
+            </ul>
+          </div><!--/.navbar-collapse -->
+        </div>
+      </div>
+      {{ content }}
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>This application is available under the MIT License, courtesy of <a href="http://marmelab.com">marmelab</a>.</p>
+          </div>
+          <div class="col-offset-md-2 col-md-2">
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/marmelab/phpcr-browser">GitHub repository</a></li>
+              <li><a href="http://marmelab.com">marmelab</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="demoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Try it online!</h4>
+          </div>
+          <div class="modal-body">
+            <p>The PHPCR Browser is running on micro AWS instance. That means it could become slower at any moment.</p>
+            <p>The data added into the content repository throught the demo browser are deleted each night.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <a href="{{ site.aws.url }}" class="btn btn-primary">I got it, let's go!</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="/assets/bower_components/jquery/dist/jquery.min.js" language="javascript"></script>
+    <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.min.js" language="javascript"></script>
+  </body>
+</html>
